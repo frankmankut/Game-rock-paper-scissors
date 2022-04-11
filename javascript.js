@@ -1,4 +1,4 @@
-let computerPlay = Math.floor(Math.random()*3) + 1;
+const computerPlay = Math.floor(Math.random()*3) + 1;
     if (computerPlay == 1) {
         console.log("Rock")
     }
