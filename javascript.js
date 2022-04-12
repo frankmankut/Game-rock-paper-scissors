@@ -1,10 +1,14 @@
-const computerPlay = Math.floor(Math.random()*3) + 1;
-    if (computerPlay == 1) {
-        console.log("Rock")
+function computerPlay() {
+    const paperRockScissors = Math.floor(Math.random()*3) + 1;
+    if (paperRockScissors === 1) {
+        return "Rock";
     }
-    if (computerPlay == 2) {
-        console.log("Paper")
+    else if (paperRockScissors === 2) {
+        return "Paper"; 
     }
-    if (computerPlay == 3) {
-        console.log("Scissors")
+    else if (paperRockScissors === 3) {
+        return "Scissors";
     }
+    
+}
+  console.log(computerPlay());
